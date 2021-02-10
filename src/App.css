@@ -1,0 +1,17 @@
+button{
+  background-color: blueviolet;
+  font-size: 15px;
+  color: aliceblue;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span{
+  font-size: 20px;
+  color: green;
+  font-weight: bold;
+  font-family: inherit;
+}
