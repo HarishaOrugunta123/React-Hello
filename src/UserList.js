@@ -20,6 +20,10 @@ class UserList extends Component {
     this.setState({ display: false });
   }
 
+ 
+     
+
+  
   show() {
     // fetch("https://jsonplaceholder.typicode.com/users/" + this.state.value)
     //   .then((response) => response.json())
@@ -41,10 +45,12 @@ class UserList extends Component {
   }
 
   deletehandler = (e, id) => {
-    let index = this.state.users.findIndex((e) => e.id === id);
-    let newArray = this.state.users.slice();
-    newArray.splice(index, 1);
-    this.setState({ users: newArray });
+    // let index = this.state.users.findIndex((e) => e.id === id);
+    // let newArray = this.state.users.slice();
+    // newArray.splice(index, 1);
+    // this.setState({ users: newArray });
+    let filtered = this.state.users.filter((e) => e.id !== id)
+    this.setState({users: filtered})
   };
 
   render() {
